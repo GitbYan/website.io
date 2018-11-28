@@ -1,0 +1,56 @@
+/* CSS Document */
+ul {
+	z-index: 101;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	background-color: pink;
+	opacity: 0.75;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 18px;
+	line-height: 12px;
+}
+li {
+	float: left;
+	height: 100%;
+}
+li a {
+	display: block;
+	color: purple;
+	text-align: center;
+	padding: 20px;
+	margin: 0 ;
+	text-decoration: none;
+}
+/*鼠标移动到选项上修改背景颜色 */
+li a:hover {
+	background-color: #5C6A7D;
+}
+li a.active {
+	background-color: #4CAF50;
+}
+li2{
+	float: right;
+	height: 100%;
+	padding-right: 5%;
+	margin-right: 2%;
+}
+li2 :hover {
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

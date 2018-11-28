@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="assets/css/ul.css">
+	<link href="assets/css/home.css" rel="stylesheet" type="text/css" media="all"/>
+	<title>印象 · 珞珈 | 老建筑的前世今生，武大人的难忘岁月</title>
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/yinghua.js"></script>
+	<script>
+		function play() {
+			var audio = document.getElementById('music');
+			if (document.getElementById('div1').style.display=='block') {
+				audio.pause();
+				document.getElementById('div2').style.display='block';
+				document.getElementById('div1').style.display='none';
+			}
+			else{
+				audio.play();
+				audio.currentTime = 0;
+				document.getElementById('div2').style.display='none';
+				document.getElementById('div1').style.display='block';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="cherry">
+		<img id="yinghua" alt="">
+	</div>
+	<script>
+		$(function(){
+			$('.cherry').Cherry_Blossoms({
+				is_Cherry:true,//是否生成樱花
+				image_min:10,//花瓣最小宽度和高度
+				image_max:50,//花瓣最大宽度和高度
+				time_min:10000,//花瓣最快下坠时间
+				time_max:20000,//花瓣最慢下坠时间
+				interval:500//花瓣生成时间间隔
+			})
+		})
+	</script>
+	<ul>		
+		<li><a href="home">回珈</a></li>
+		<li><a href="#news">活动</a></li>
+		<li><a href="#contact">联系</a></li>
+		<li><a href="#about">关于</a></li>
+		<li2>
+			<span id="div1" style="display: block;" class="fa-stack fa-lg fa-spin" onClick="play()">
+				<i class="fa fa-circle fa-stack-2x" ></i>
+				<i class="fa fa-music fa-stack-1x fa-inverse"></i>
+			</span><audio id="music" src="assets/music/《合照》.mp3" loop="true" autoplay="true"></audio>
+			<span id="div2" style="display: none;" class="fa-stack fa-lg" onClick="play()">
+				<i class="fa fa-circle fa-stack-2x" ></i>
+				<i class="fa fa-music fa-stack-1x fa-inverse"></i>
+			</span>		
+		</li2>	
+	</ul>
+	<div class="content">
+		<h1>
+			<span id="intro0">&nbsp;</span>
+			<span id="intro1">珞珈山，东湖水</span>
+			<span id="intro2">煌煌武大，巍巍珞珈</span>
+			<span id="intro3">晴空万里与皓月当空，老图依旧</span>
+			<span id="intro4">几代武大人的回忆和牵挂</span>
+			<span id="intro5">樱顶之上，老斋舍旁</span>
+			<span id="intro6">一百零八级台阶，踩过了武大人的辉煌岁月</span>
+			<span id="intro7">你不知道的珞珈</span>
+			<span id="intro8">屹立如昔，孔雀蓝色的琉璃瓦，静待着南来北往的人们</span>
+			<span id="intro9">时间之河从未停止流淌</span>
+			<span id="intro10">终于，等到你</span>
+			<span id="intro11">&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</span>
+		</h1>
+	</div>
+	<footer>Copyright &copy; 2018.武汉大学 All rights reserved.<a target="_blank" href="http://www.whu.edu.cn/"> @ Wuhan University</a>
+	</footer>
+</body>
+</html>

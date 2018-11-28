@@ -1,0 +1,305 @@
+/* CSS Document */
+img{
+    width:50px;
+    height:50px;
+    margin-top:-5%;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 99;
+    /*-webkit-transform:rotate3d(.6,1,.6,45deg);*/
+    /*-moz-transform:rotate3d(.6,1,.6,45deg);*/
+    /*-ms-transform:rotate3d(.6,1,.6,45deg);*/
+    /*-o-transform:rotate3d(.6,1,.6,45deg);*/
+    /*transform:rotate3d(.6,1,.6,45deg);*/
+}
+body{
+	background: url(../background/bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.body a{
+	-webkit-user-select: element;
+	-moz-user-select: element;
+	-ms-user-select: element;
+	user-select: element;
+}
+h1 span{
+	background:rgba(0,0,0,0.6);
+	color: #8C7A7A;
+	display: block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.content h1 {
+	z-index: 99;
+    font-size: 18px;
+    font-weight: 600;
+	text-align: center;
+    color: #42526E;
+    margin: 20px 20px 36px;
+	font-family:'FangSong', Sans-serif;
+	line-height: 50px;
+}
+footer {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 20% 0 2px ;
+    color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	bottom: 0;
+	position: fixed;
+	left: 20%;
+	right: 20%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+footer a{
+	font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+	text-decoration: none;
+    padding: 20px 0 20px 0;
+    color: #fff;
+}
+footer a:hover{
+	color: #6A0001;
+}
+
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    30% {opacity: 0.3;}/*过渡状态 透明度为0.5*/  
+	60% {opacity: 0.6;}/*过渡状态 透明度为0.5*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+}  
+#intro0{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 1s;/*动画持续时间*/  
+    -webkit-animation:fade-in 1s;/*针对webkit内核*/  
+}
+#intro1{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 2.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2.5s;/*针对webkit内核*/  
+}
+#intro2{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 4s;/*动画持续时间*/  
+    -webkit-animation:fade-in 4s;/*针对webkit内核*/  
+}
+#intro3{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 5.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 5.5s;/*针对webkit内核*/  
+}
+#intro4{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 7s;/*动画持续时间*/  
+    -webkit-animation:fade-in 7s;/*针对webkit内核*/  
+}
+#intro5{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 8.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 8.5s;/*针对webkit内核*/  
+}
+#intro6{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 10s;/*动画持续时间*/  
+    -webkit-animation:fade-in 10s;/*针对webkit内核*/  
+}
+#intro7{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 11.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 11.5s;/*针对webkit内核*/  
+}
+#intro8{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 13s;/*动画持续时间*/  
+    -webkit-animation:fade-in 13s;/*针对webkit内核*/  
+}
+#intro9{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 14.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 14.5s;/*针对webkit内核*/  
+}
+#intro10{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 16s;/*动画持续时间*/  
+    -webkit-animation:fade-in 16s;/*针对webkit内核*/  
+}
+#intro11{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 17.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 17.5s;/*针对webkit内核*/  
+}
+/*适应屏幕设置*/
+@media(max-width:1440px){
+	ul{
+		line-height: 12px;
+	}
+}
+@media(max-width:1366px){
+	ul{
+		font-size: 17.5px;
+		line-height: 12px;
+	}	
+}
+@media(max-width:1080px){
+	ul{
+		font-size: 17px;
+		line-height: 12px;
+	}
+}
+@media(max-width:1050px){
+	ul{
+		font-size: 16.5px;
+		line-height: 12px;
+	}
+}
+@media(max-width:1024px){
+	ul{
+		font-size: 16px;
+		line-height: 12px;
+	}
+}
+@media(max-width:991px){
+	ul{
+		font-size: 13px;
+		line-height: 12px;
+	}
+}
+@media(max-width:900px){
+	.content h1 {
+		font-size: 15.5px;
+	}
+	ul{
+		font-size: 12px;
+		line-height: 12px;
+	}
+}
+@media(max-width:800px){
+	.content h1 {
+		font-size: 15px;
+	}
+	ul{
+		font-size: 11.5px;
+		line-height: 12px;
+	}
+}
+@media(max-width:768px){
+	.content h1 {
+		font-size: 14.5px;
+	}
+	ul{
+		font-size: 11px;
+		line-height: 11.5px;
+	}
+}
+@media(max-width:736px){
+	.content h1 {
+		font-size: 14px;
+	}
+	ul{
+		font-size: 11px;
+		line-height: 11px;
+	}
+}
+@media(max-width:667px){
+	.content h1 {
+		font-size: 13.5px;
+	}
+	ul{
+		font-size: 10px;
+		line-height: 10.5px;
+	}
+}
+@media(max-width:640px){
+	.content h1 {
+		font-size: 13px;
+	}
+	ul{
+		font-size: 10px;
+		line-height: 10px;
+	}
+}
+@media(max-width:600px){
+	.content h1 {
+		font-size: 12.5px;
+	}
+	footer {
+		font-size: 14px;
+	}
+	footer a{
+		font-size: 14px;
+	}
+}
+@media(max-width:568px){
+	.content h1 {
+		font-size: 12px;
+	}
+	footer {
+		font-size: 13.5px;
+	}
+	footer a{
+		font-size: 13.5px;
+	}
+}
+@media(max-width:480px){
+	.content h1 {
+		font-size: 11.5px;
+	}
+	footer{
+		letter-spacing: 0px;
+		font-size: 13px;
+	}
+	footer a{
+		letter-spacing: 0px;
+		font-size: 13px;
+	}
+}
+@media(max-width:414px){
+	.content h1 {
+		font-size: 11px;
+	}
+	footer {
+		font-size: 12.5px;
+	}
+	footer a{
+		font-size: 12.5px;
+	}
+}
+@media(max-width:384px){
+	.content h1 {
+		font-size: 10.5px;
+	}
+	footer {
+		font-size: 12px;
+	}
+	footer a{
+		font-size: 12px;
+	}
+}
+@media(max-width:320px){
+	.content h1 {
+		font-size: 10px;
+	}
+	footer {
+		font-size: 11.5px;
+	}
+	footer a{
+		font-size: 11.5px;
+	}
+}
